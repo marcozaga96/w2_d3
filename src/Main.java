@@ -62,6 +62,11 @@ public class Main {
         filterBaby.forEach(order -> System.out.println("ordine con id: " + order.getId() + " si trova in stato di: " + order.getStatus()));
 
         System.out.println("-----------------------esercizio 4------------------");
+        List<Product> listaTier2 = orderList.stream()
+                .filter(order -> order.getCustomer().getTier() == 2)
+                .filter(order -> !order.getOrderDate().isBefore(LocalDate.of(2024, 9, 20)) && !order.getOrderDate().isAfter(LocalDate.of(2024, 9, 30)))
+                .flatMap(order -> order.getProducts().stream()).toList();
 
+        listaTier2.forEach(product -> System.out.println(product.getName() + " - " + product.getPrice()));
     }
 }
