@@ -1,23 +1,23 @@
 package Classi;
 
 public class Product {
-    protected Long id;
+    protected long id;
     protected String name;
     protected String category;
-    protected Double price;
+    protected double price;
 
-    public Product(Long id, String name, String category, Double price) {
+    public Product(long id, String name, String category, double price) {
         this.id = id;
         this.name = name;
         this.category = category;
         this.price = price;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -37,11 +37,11 @@ public class Product {
         this.category = category;
     }
 
-    public Double getPrice() {
+    public double getPrice() {
         return price;
     }
 
-    public void setPrice(Double price) {
+    public void setPrice(double price) {
         this.price = price;
     }
 }
