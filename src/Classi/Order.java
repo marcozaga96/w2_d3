@@ -4,14 +4,14 @@ import java.time.LocalDate;
 import java.util.List;
 
 public class Order {
-    protected Long id;
+    protected long id;
     protected String status;
     protected LocalDate orderDate;
     protected LocalDate deliveryDate;
     protected List<Product> products;
     protected Customer customer;
 
-    public Order(Long id, String status, LocalDate deliveryDate, LocalDate orderDate, List<Product> products, Customer customer) {
+    public Order(long id, String status, LocalDate deliveryDate, LocalDate orderDate, List<Product> products, Customer customer) {
         this.id = id;
         this.status = status;
         this.deliveryDate = deliveryDate;
@@ -20,11 +20,11 @@ public class Order {
         this.customer = customer;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 

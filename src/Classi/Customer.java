@@ -1,11 +1,11 @@
 package Classi;
 
 public class Customer {
-    protected Long id;
+    protected long id;
     protected String name;
     protected Integer tier;
 
-    public Customer(Long id, String name, Integer tier) {
+    public Customer(long id, String name, Integer tier) {
         this.id = id;
         this.name = name;
         this.tier = tier;
@@ -19,11 +19,11 @@ public class Customer {
         this.name = name;
     }
 
-    public Long getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(Long id) {
+    public void setId(long id) {
         this.id = id;
     }
 
