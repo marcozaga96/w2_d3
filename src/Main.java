@@ -23,8 +23,8 @@ public class Main {
 
         //creazione utenti
         Customer utente1 = new Customer(1, "marco", 2);
-        Customer utente2 = new Customer(2, "giuseppe", 1);
-        Customer utente3 = new Customer(3, "luca ", 3);
+        Customer utente2 = new Customer(2, "giuseppe", 2);
+        Customer utente3 = new Customer(3, "luca ", 2);
         Customer utente4 = new Customer(4, "aldo", 2);
 
         //creazione ordini
@@ -62,7 +62,6 @@ public class Main {
         filterBaby.forEach(order -> System.out.println("ordine con id: " + order.getId() + " si trova in stato di: " + order.getStatus()));
 
         System.out.println("-----------------------esercizio 4------------------");
-
 
     }
 }
